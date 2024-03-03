@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Solaris</title>
+</head>
+<body>
+    <!-- Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+
+     <!-- <Title -->
+        <section class="wrapper__content">
+            <h1 class="content__title">Solsystemet</h1>
+            <p class="content__text">Solaris</p>
+        </section>
+      
+    <!-- Searchfield -->    
+    <h2 class="search__title">Vill du läsa om en särskild planet? Sök på den här!</h2>
+    <section class="search__container">
+        <input id="searchBar"
+        type="text" 
+        name="searchBar" 
+        placeholder="Sök på planet.."ss/>
+
+        <button class="button__submit">Sök</button>
+    </section>
+
+    <!-- The planets -->
+    <div id="planets">
+        
+            <div id="star" data-planet-name="Solen"></div>
+            <div id="planet1" data-planet-name="Merkurius"></div>
+            <div id="planet2" data-planet-name="Venus"></div>
+            <div id="planet3" data-planet-name="Jorden"></div>
+            <div id="planet4" data-planet-name="Mars"></div>
+            <div id="planet5" data-planet-name="Jupiter"></div>
+            <div id="planet6" data-planet-name="Saturnus"><svg viewBox='0 0 130 130'>
+                <path d='M0,78 a65,25 0 1 1 102.5,45' stroke='rgba(71,59,37,1)' stroke-width='2' fill='transparent' transform='rotate(45,100,100)' />
+                <path d='M0,78 a65,25 0 1 0 102.5,45' stroke='rgba(71,59,37,1)' stroke-width='2' fill='transparent' transform='rotate(45,100,100)' />
+              </svg></div>
+            <div id="planet7" data-planet-name="Uranus"></div>
+            <div id="planet8" data-planet-name="Neptunus"></div>
+
+    </div>
+    
+    <!-- Overlay to display the info about the planets -->
+    <div class="display__info">
+    <div class="planet__info"></div>
+    <button class="close__button">Gå tillbaka</button>
+    </div>
+    
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
